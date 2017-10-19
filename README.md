@@ -25,4 +25,4 @@ $ ./4pic YYLWFDORN 5 10
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Chris Kibble
+Copyright (c) 2017 Aldee Mativo
