@@ -1,0 +1,30 @@
+#!/usr/bin/php
+<?php
+
+if (!isset($argv[2])) {
+    throw new \Exception('Insufficient arguments.');
+}
+
+$timeout = isset($argv[3]) ? $argv[3] : 20;
+
+$pspell = pspell_new('en');
+$printed = [];
+
+echo "\nListing possible values... [Press Ctrl+C to stop]\n\n";
+
+$start = time();
+while (true) {
+   $str = substr(str_shuffle($argv[1]), 0, $argv[2]);
+
+   // break after timeout
+   if (time() - $start >= $timeout) {
+       exit ("\n\nCompleted. I'm tired!");
+   } 
+
+   if (pspell_check($pspell, $str) && !in_array($str, $printed)) {
+       echo (count($printed) ? ', ' : '') . $str;
+       $printed[] = $str;
+
+       $iterations = 0;
+   }
+}
