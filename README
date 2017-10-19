@@ -12,11 +12,12 @@
 
 - Given characters: YYLWFDORN 
 - # of characters required: 5
+- seconds timeout (optional): 10 - means timeout after 10 seconds
 
 ```bash
 
 $ chmod a+x 4pic
-$ ./4pic YYLWFDORN 5
+$ ./4pic YYLWFDORN 5 10
 
 ```
 
