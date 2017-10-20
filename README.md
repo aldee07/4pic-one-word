@@ -11,7 +11,7 @@
 ## Usage
 
 - Given characters: YYLWFDORN 
-- # of characters required: 5
+- Number of characters required: 5
 - seconds timeout (optional): 10 - means timeout after 10 seconds
 
 ```bash
@@ -25,4 +25,4 @@ $ ./4pic YYLWFDORN 5 10
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Chris Kibble
+Copyright (c) 2017 Aldee Mativo
